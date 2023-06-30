@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calorie Tracker</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <ul class="navbar">
+            <li><a href="#">Calorie Tracker</a></li>
+        </ul>
+
+        <h1>Calorie Tracker</h1>
+
+        <form id="calorieForm">
+            <ul>
+                <li>
+                    <input type="checkbox" name="food" value="Banana|105"> Banana (105 calories)
+                </li>
+                <li>
+                    <input type="checkbox" name="food" value="2 Cups of Milk|300"> 2 Cups of Milk (300 calories)
+                </li>
+                <li>
+                    <input type="checkbox" name="food" value="1 Tablespoons of Honey|60"> 1 Tbsp of Honey (60 calories)
+                </li>
+                <li>
+                    <input type="checkbox" name="food" value="4 Tablespoons of Peanut Butter|380"> 4 Tbsp of Peanut Butter (380 calories)
+                </li>
+                <li>
+                    <input type="checkbox" name="food" value="1 cup of Quaker Oats|300"> 1/2 Cup of Quaker Oats (300 Calories)
+                </li>
+            </ul>
+            <button  type="submit">Submit</button>
+        </form>
+
+        <h2>Total Calories: <span id="totalCalories">0</span></h2>
+
+        <div class="theamus-container">
+            <img src="/IMG_0075.PNG" alt="Theamus the 7th" class="Theamus">
+
+        </div>
+
+        <script src="/script.js"></script>
+
+
+    </body>
+</html>
