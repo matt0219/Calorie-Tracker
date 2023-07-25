@@ -57,33 +57,20 @@ ul.navbar li a:hover {
     background-color: red;
 }
 
-.Theamus {
-    width: 200px;
-    height: auto;
-    margin: 0 auto;
-    
-}
-
-.theamus-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 @media screen and (max-width: 992px) {
-    nav, .Theamus {
+    nav {
         background-color: red;
     }
 }
 
 @media screen and (max-width: 768px) {
-    nav, .Theamus {
+    nav {
         background-color: red;
     }
 }
 
 @media screen and (max-width: 576px) {
-    nav, .Theamus {
+    nav {
         background-color: red;
     }
 }
