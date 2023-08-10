@@ -25,19 +25,19 @@
                 <h3>Bulk Shake</h3>
                 <ul id="bulkShakeList">
                 <li>
-                    <input type="checkbox" name="food" value="Banana|105"> Banana (105 calories)
+                    <input type="checkbox" name="food" value="Banana|105|1.5"> Banana (105 calories, 1.5g Protein)
                 </li>
                 <li>
-                    <input type="checkbox" name="food" value="2 Cups of Milk|300"> 2 Cups of Milk (300 calories)
+                    <input type="checkbox" name="food" value="2 Cups of Milk|300|16"> 2 Cups of Milk (300 calories, 16g Protein)
                 </li>
                 <li>
                     <input type="checkbox" name="food" value="3 Tablespoons of Honey|180"> 3 Tbsp of Honey (180 calories)
                 </li>
                 <li>
-                    <input type="checkbox" name="food" value="1 cup of Quaker Oats|300"> 1 Cup of Quaker Oats (300 calories)
+                    <input type="checkbox" name="food" value="1 cup of Quaker Oats|300|10"> 1 Cup of Quaker Oats (300 calories, 10g Protein)
                 </li>
                 <li>
-                    <input type="checkbox" name="food" value="2 Scoops of Plant Organic Protein|170"> 2 Scoop of Plant Organic Protein (170 calories)
+                    <input type="checkbox" name="food" value="2 Scoops of Plant Organic Protein|170|25"> 2 Scoop of Plant Organic Protein (170 calories, 25g Protein)
                 </li>
             </ul>
             </div>
@@ -46,13 +46,13 @@
                 <h3>Breakfast</h3>
                 <ul id="breakfastList">
                     <li>
-                        <input type="checkbox" name="food" value="Odom's Tennessee Pride Sausage Biscuits|600"> 4 Odom's Tennessee Pride Sausage Biscuits (600 calories)
+                        <input type="checkbox" name="food" value="Odom's Tennessee Pride Sausage Biscuits|600|14"> 4 Odom's Tennessee Pride Sausage Biscuits (600 calories, 14g Protein)
                     </li>
                     <li>
                         <input type="checkbox" name="food" value="Farm Rich Cinnamon Toast Sticks|330"> 4 Farm Rich Cinnamon Toast Sticks (330 calories)
                     </li>
                     <li>
-                        <input type="checkbox" name="food" value="4 Eggs|280"> 4 Eggs (280 calories)
+                        <input type="checkbox" name="food" value="4 Eggs|280|24"> 4 Eggs (280 calories, 24g Protein)
                     </li>
                 </ul>
             </div>
@@ -70,13 +70,13 @@
                         <input type="checkbox" name="food" value="Burger Bread|220"> 2 Separate Burger Buns (220 calories)
                     </li>
                     <li>
-                        <input type="checkbox" name="food" value="2 BallPark Beef Hotdog Weenies|340"> 2 BallPark Hotdog Weenies (340 calories)
+                        <input type="checkbox" name="food" value="2 BallPark Beef Hotdog Weenies|340|12"> 2 BallPark Hotdog Weenies (340 calories, 12g Protein)
                     </li>
                     <li>
                         <input type="checkbox" name="food" value="Hotdog Buns|260"> 2 Hotdog Buns (260 calories)
                     </li>
                     <li>
-                        <input type="checkbox" name="food" value="Plant Organic Protein|170"> 2 Scoops of Plant Organic Protein (170 calories)
+                        <input type="checkbox" name="food" value="Plant Organic Protein|170|25"> 2 Scoops of Plant Organic Protein (170 calories, 25g Protein)
                     </li>
                     <li>
                         <input type="checkbox" name="food" value="Welch's Fruit Snacks|70"> 1 Pack of Welch's Fruit Snacks (70 calories)
@@ -88,14 +88,15 @@
                         <input type="checkbox" name="food" value="1/4 cup of Mahatma Rice|160"> 1/4 Cup of Mahatma Rice (160 calories)
                     </li>
                     <li>
-                        <input type="checkbox" name="food" value="Belvita Breakfast Biscuits|230"> Belvita Cinnamon Brown Sugar Breakfast Biscuits (230 Calories)
+                        <input type="checkbox" name="food" value="Belvita Breakfast Biscuits|230|4"> Belvita Cinnamon Brown Sugar Breakfast Biscuits (230 Calories, 4g Protein)
                     </li>
                 </ul>
             </div>
             <button id="submitbutton"  type="submit">Submit</button>
         </form>
 
-        <h2>Total Calories: <span id="totalCalories">0</span></h2>
+        <h2>Total Calories: <span id="totalCalories">0</span> calories</h2>
+        <h2>Total Protein: <span id="totalProtein">0</span> grams</h2>
 
         <script src="./script.js"></script>
     </body>
