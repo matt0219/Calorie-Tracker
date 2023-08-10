@@ -8,11 +8,15 @@ document.getElementById("calorieForm").addEventListener("submit", function(event
     for (var i = 0; i < checkboxes.length; i++) {
       let foodInfo = checkboxes[i].value.split("|");
       let calories = parseInt(foodInfo[1]);
-      let protein = parseFloat(FoodInfo[2]); // Parse protein as a float
-      // Extract protein from the foodInfo array (Assuming it's the third item)
+
+      // Checkk if protein value is present before parsing
+      if (foodInfo.length >= 3) {
+          let protein = parseFloat(foodInfo[2]); // Parse protein as a float
+          totalProtein += protein
+          // Extract protein from the foodInfo array (Assuming it's the third item)
+      }
 
       totalCalories += calories;
-      totalProtein += protein
     }
 
     document.getElementById("totalCalories").textContent = totalCalories;
