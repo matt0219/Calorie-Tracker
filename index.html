@@ -92,12 +92,29 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="column">
+                <h3>Custom Food Entries</h3>
+                <ul id="customFoodList">
+                    <!-- Custom food items will be added here -->
+                </ul>
+            </div>
             <button id="submitbutton"  type="submit">Submit</button>
         </form>
 
         <h2>Total Calories: <span id="totalCalories">0</span> calories</h2>
         <h2>Total Protein: <span id="totalProtein">0</span> grams</h2>
-
+    
+        <div class="column">
+            <h3>Custom Food Entry</h3>
+            <label for="customFoodName">Food Name:</label>
+            <input type="text" id="customFoodName"/>
+            <label for="customFoodCalories">Calories:</label>
+            <input type="number" id="customFoodCalories"/>
+            <label for="customFoodProtein">Protein (optional):</label>
+            <input type="number" id="customFoodProtein"/>
+            <button id="addCustomFood">Add Custom Food</button>
+        </div>
         <script src="./script.js"></script>
     </body>
 </html>

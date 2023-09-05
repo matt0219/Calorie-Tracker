@@ -9,6 +9,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.column {
+    color: white;
+    text-align: center;
+}
+
 h3 {
     color: red;
 }
