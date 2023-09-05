@@ -5,6 +5,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#registrationForm, #loginForm {
+    color: white;
+}
+
 #submitbutton {
     font-family: 'Poppins', sans-serif;
 }

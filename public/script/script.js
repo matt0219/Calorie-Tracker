@@ -52,6 +52,56 @@ document.getElementById("addCustomFood").addEventListener("click", function () {
   }
 });
 
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const username = document.getElementById("usernae").value;
+  const password = document.getElementById("password").value;
+
+  // Send a POST request to your server to create a new user
+  fetch("/register", {
+    method: "POST",
+    body: JSON.stringify({ username, password }),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Handle registration success or failure
+    if (data.success) {
+      alert("Registration successful!");
+    } else {
+      alert("Registration failed. Try a different username.");
+    }
+  });
+});
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Send a POST request to your server to authenticate the user
+  fetch("/login", {
+    method: "POST",
+    body: JSON.stringify({ username, password }),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Handle login success or failure
+    if(data.success) {
+      alert("Login successful!");
+      // Redirect or update UI as needed
+    } else {
+      alert("Login failed. Check your username and password.");
+    }
+  });
+});
 
 
 
